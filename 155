@@ -1,0 +1,13 @@
+r=float(input("Радіус:"))
+n=int(input("Номер:"))
+
+p=3.14
+
+if n == 1:
+    print(2*p*r)
+elif n == 2:
+    print(p*(r**2))
+elif n == 3:
+    print((4/3)*p*r**3)
+elif n == 4:
+    print(4*p*r**2)
