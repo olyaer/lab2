@@ -1,0 +1,25 @@
+d = int(input())
+m = int(input())
+y = int(input())
+
+if d > 1:
+    d = d - 1
+else:
+    if m == 1:
+        d = 31
+        m = 12
+        y = y - 1
+    elif m == 3:
+        m = 2
+        if y % 400 == 0 or (y % 4 == 0 and y % 100 != 0):
+            d = 29
+        else:
+            d = 28
+    elif m == 5 or m == 7 or m == 10 or m == 12:
+        d = 30
+        m = m - 1
+    else:
+        d = 31
+        m = m - 1
+
+print(d, m, y, sep=".")
