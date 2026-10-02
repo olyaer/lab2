@@ -1,0 +1,6 @@
+a = input("Літери: ")
+b = input("Літери: ")
+if a < b:
+    print(f"{a} is less than {b}")
+else:
+    print(f"{a} is not less than {b}")
